@@ -1,7 +1,6 @@
 // src/components/Navbar.tsx
-import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { MdHome, MdFolder, MdMail } from "react-icons/md";
+import { MdFolder, MdMail } from "react-icons/md";
 import styles from "./Navbar.module.css";
 import { RxAvatar, RxHome } from "react-icons/rx";
 
