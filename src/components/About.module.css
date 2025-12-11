@@ -1,0 +1,100 @@
+.section {
+  padding: 3rem 1rem;
+  background: #f8f9fa;
+  width: 100%;
+  overflow-x: hidden; /* prevents horizontal scroll */
+}
+
+.divider {
+  width: 80px;
+  height: 3px;
+  background: #007bff;
+  margin: 0 auto 2rem;
+  border-radius: 6px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap; /* allows stacking on small screens */
+}
+
+/* LEFT SIDE */
+.left {
+  flex: 1;
+  min-width: 230px;
+  display: flex;
+  justify-content: center;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
+}
+
+/* RIGHT SIDE */
+.right {
+  flex: 2;
+  min-width: 260px;
+  text-align: left;
+  padding-right: 0;
+}
+
+.name {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #007bff;
+}
+
+.description {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: #495057;
+  margin-bottom: 1.4rem;
+  width: 100%; /* full width on mobile */
+  max-width: 600px; /* keeps text readable on desktop */
+  padding: 0;
+}
+
+/* DESKTOP ADJUSTMENTS */
+@media (min-width: 768px) {
+  .section {
+    padding: 4rem 1rem;
+  }
+
+  .avatar {
+    width: 150px;
+    height: 150px;
+  }
+
+  .right p {
+    font-size: 1.1rem;
+    text-align: left;
+  }
+}
+
+/* MOBILE STACKING */
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .right {
+    text-align: center;
+  }
+
+  .description {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

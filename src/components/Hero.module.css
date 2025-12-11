@@ -1,0 +1,161 @@
+/* ===========================
+   GLOBAL-SAFE RESET (ONLY inside hero)
+=========================== */
+
+.hero {
+  margin: 0;
+  padding: 0;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
+  color: white;
+  padding: 2rem 1rem;
+
+  text-align: center;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Fixes remaining white space on some mobile browsers */
+.hero,
+.contentWrapper,
+.content {
+  max-width: 100%;
+}
+
+/* ===========================
+   CONTENT WRAPPER
+=========================== */
+
+.contentWrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  text-align: center;
+  overflow: hidden; /* extra safety */
+}
+
+.content {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ===========================
+   TEXT
+=========================== */
+
+.hero h1 {
+  text-align: center !important;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #b1c7f7;
+}
+
+
+h4 {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+
+  line-height: 1.5;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* ===========================
+   TECH STACK SCROLLER
+=========================== */
+
+.techScroller {
+  width: 100%;
+  overflow: hidden;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.scrollerInner {
+  display: flex;
+  gap: 3rem;
+  width: max-content; /* <-- prevents shrinking */
+  animation: scroll 16s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%); /* move exactly half of its total length */
+  }
+}
+
+.techItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.9;
+}
+
+.techItem svg {
+  width: 32px;
+  height: 32px;
+}
+
+
+.techItem span {
+  font-size: 0.9rem;
+}
+
+/* .techItem svg {
+  width: 26px;
+  height: 26px;
+} */
+
+/* ===========================
+   MOBILE OPTIMIZATION
+=========================== */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  .scrollerInner {
+    gap: 1.5rem;
+  }
+}

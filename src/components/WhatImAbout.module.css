@@ -1,0 +1,59 @@
+/* src/components/WhatImAbout.module.css */
+.section {
+  padding: 4rem 1rem;
+  text-align: center;
+  background: #F8F9FA;
+  width: 100%;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #343A40;
+}
+
+.cardGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.icon {
+  font-size: 4rem;
+  color: #007BFF;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #007BFF;
+}
+
+p {
+  font-size: 1rem;
+  color: #343A40;
+}
+
+@media (min-width: 768px) {
+  .cardGrid {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .card {
+    flex: 1;
+    max-width: 30%;
+  }
+}
