@@ -47,11 +47,11 @@ const Hero = () => {
           <div className="hero-buttons">
             <Button
               text="Work With Me"
-              onClick={() => (window.location.href = "/contact")}
+              to="/contact"
               variant="primary"
             />
 
-            <Button text="See Projects" variant="secondary" />
+            <Button text="See Projects" variant="secondary" to="/projects"/>
           </div>
         </motion.div>
       </div>

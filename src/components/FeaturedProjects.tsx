@@ -3,34 +3,31 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import ProjectCard from './ProjectCard';
 import styles from './FeaturedProjects.module.css'; 
-import placeholder from '../assets/placeholder.webp';
+import phishguardImg from '../assets/phishguard.png';
+import leoCosmeticsImg from '../assets/leo-cosmetics.png';
+import v4c from '../assets/v4c.png';
 import Button from '../components/common/Button';
 
 const featuredProjectsData = [
   {
     title: 'PhishGuard NG',
     type: 'Cybersecurity Tool',
-    image: placeholder,
+    image: phishguardImg,
     detailPath: '/projects/phishing-simulation-tool',
   },
   {
     title: 'Leo Cosmetics',
     type: 'E-commerce Platform',
-    image: placeholder,
-    detailPath: '/projects/e-commerce-website',
+    image: leoCosmeticsImg,
+    detailPath: '/projects/leo-cosmetics',
   },
   {
     title: 'Volunteers4Cause',
     type: 'NGO Website',
-    image: placeholder,
+    image: v4c,
     detailPath: '/projects/volunteers4cause-ngo-website',
   },
-  {
-    title: 'Harvestwealth Nigeria Ltd',
-    type: 'Business Website',
-    image: placeholder,
-    detailPath: '/projects/harvestwealth-nigeria-ltd',
-  },
+  
 ];
 
 const FeaturedProjects = () => {
@@ -56,9 +53,9 @@ const FeaturedProjects = () => {
       
       
       <div className={styles.viewAllContainer}>
-        <Link to="/projects" className={styles.viewAllButton}>
+        <Link to="https://github.com/DevJerry1738?tab=repositories" className={styles.viewAllButton}>
         {/* link to github */}
-          <Button text="View GitHub Projects" variant="secondary" />
+          <Button text="View GitHub Repository" variant="secondary" />
         </Link>
       </div>
     </section>

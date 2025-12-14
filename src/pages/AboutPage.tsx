@@ -58,13 +58,7 @@ const About = () => {
           </li>
         </ul>
       </motion.div>
-      <div className={styles.projectLinks}>
-        <Link to="/projects/harvestwealth">Harvestwealth</Link>
-        <span> • </span>
-        <Link to="/projects/volunteers4cause">Volunteers4Cause</Link>
-        <span> • </span>
-        <Link to="/projects/alicias-spa">Alicia's Spa</Link>
-      </div>
+      
       <footer className={styles.footer}>© 2025. All Rights Reserved.</footer>
     </section>
   );

@@ -8,6 +8,14 @@
   text-align: center;
 }
 
+.divider {
+  width: 80px;
+  height: 3px;
+  background: #007bff;
+  margin: 0 auto 2rem;
+  border-radius: 6px;
+}
+
 .form {
   width: 100%;
   max-width: 600px;
@@ -47,7 +55,7 @@ textarea {
 
 .links {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1.5rem;
 }
 
@@ -56,6 +64,7 @@ textarea {
   font-size: 2rem;
   transition: color 0.3s;
   text-decoration: none;
+  margin-bottom: 20px;
 }
 
 .link:hover {
@@ -66,5 +75,6 @@ textarea {
   .links {
     flex-direction: row;
     gap: 2rem;
+   
   }
 }
