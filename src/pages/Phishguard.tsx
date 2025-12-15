@@ -44,7 +44,7 @@ const Carousel = ({ images }: { images: number[] }) => {
           {images.map((num) => (
             <div className={styles.slide} key={num}>
               <img
-                src={`/screenshots/screen-${num}.png`}
+                src={`/screenshots/screen-${num}.webp`}
                 alt={`Screenshot ${num}`}
               />
             </div>

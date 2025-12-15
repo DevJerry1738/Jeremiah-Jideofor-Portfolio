@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import ProjectCard from './ProjectCard';
 import styles from './FeaturedProjects.module.css'; 
-import phishguardImg from '../assets/phishguard.png';
-import leoCosmeticsImg from '../assets/leo-cosmetics.png';
-import v4c from '../assets/v4c.png';
+import phishguardImg from '../assets/phishguard.webp';
+import leoCosmeticsImg from '../assets/leo-cosmetics.webp';
+import v4c from '../assets/v4c.webp';
 import Button from '../components/common/Button';
 
 const featuredProjectsData = [

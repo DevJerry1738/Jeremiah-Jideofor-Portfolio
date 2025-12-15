@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Button from '../components/common/Button';
 import styles from './About.module.css';
-import avatar from '../assets/avatar.png';
+import avatar from '../assets/avatar.webp';
 
 const WhatImAbout = () => {
   return (
