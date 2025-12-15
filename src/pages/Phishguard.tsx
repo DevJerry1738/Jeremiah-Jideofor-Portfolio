@@ -1,7 +1,6 @@
 // src/pages/PhishGuardPage.tsx
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
 import {
   MdDashboard,
