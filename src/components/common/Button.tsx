@@ -1,13 +1,15 @@
 import { motion } from 'framer-motion';
 import styles from './Button.module.css';
 import { Link } from 'react-router-dom';
+import type { ReactNode } from 'react';
 
 interface ButtonProps {
-  text: string;
+  text: ReactNode;
   to?: string;                  // NEW: navigate to route
   onClick?: () => void;
   type?: 'button' | 'submit';
   variant?: 'primary' | 'secondary';
+  disabled?: boolean;
 }
 
 const Button = ({
@@ -16,6 +18,7 @@ const Button = ({
   onClick,
   type = 'button',
   variant = 'primary',
+  disabled = false,
 }: ButtonProps) => {
   const buttonContent = (
     <motion.span
@@ -44,6 +47,7 @@ const Button = ({
       className={`${styles.button} ${styles[variant]}`}
       onClick={onClick}
       type={type}
+      disabled={disabled}
     >
       {text}
     </motion.button>

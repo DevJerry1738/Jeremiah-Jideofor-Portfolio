@@ -1,6 +1,6 @@
 // src/components/Navbar.tsx
 import { NavLink } from "react-router-dom";
-import { MdFolder, MdMail } from "react-icons/md";
+import { MdFolder, MdMail, MdOutlineBook } from "react-icons/md";
 import styles from "./Navbar.module.css";
 import { RxAvatar, RxHome } from "react-icons/rx";
 
@@ -10,6 +10,7 @@ const Navbar = () => {
     { to: "/about", label: "About" },
     { to: "/projects", label: "Projects" },
     { to: "/services", label: "Services" },
+    { to: "/blog", label: "Blog" },
     { to: "/contact", label: "Contact" },
   ];
 
@@ -17,8 +18,8 @@ const Navbar = () => {
     { to: "/", label: "Home", icon: <RxHome /> },
     { to: "/about", label: "About", icon: <RxAvatar /> },
     { to: "/projects", label: "Projects", icon: <MdFolder /> },
+    { to: "/blog", label: "Blog", icon: <MdOutlineBook /> },
     { to: "/contact", label: "Contact", icon: <MdMail /> },
-    
   ];
 
   return (

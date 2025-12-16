@@ -1,6 +1,7 @@
 // src/components/Services.tsx
 import { motion } from 'framer-motion';
-import { MdWeb, MdSecurity, MdDesignServices, MdBusinessCenter } from 'react-icons/md';
+import { MdWeb, MdSecurity, MdDesignServices, MdBusinessCenter, MdArticle } from 'react-icons/md';
+import { FaPenFancy } from 'react-icons/fa';
 import styles from './Services.module.css';
 
 const servicesData = [
@@ -23,6 +24,16 @@ const servicesData = [
     icon: <MdBusinessCenter />,
     title: 'Custom Business Solutions',
     description: 'Tailored tools like e-commerce platforms or booking systems to solve specific business challenges efficiently.',
+  },
+  {
+    icon: <FaPenFancy />,
+    title: 'Article Writing',
+    description: 'High-quality, researched articles tailored to your brand and audience—SEO friendly and ready to publish.',
+  },
+  {
+    icon: <MdArticle />,
+    title: 'Technical Writing',
+    description: 'Clear, accurate technical documentation, guides, and developer-facing content for software products.',
   },
 ];
 

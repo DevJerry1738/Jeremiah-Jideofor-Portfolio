@@ -17,42 +17,9 @@ import {
 
 import Button from "../components/common/Button";
 import styles from "./VolunteersForCause.module.css";
-import { useState } from "react";
 
-/* --------------------------------
-   CAROUSEL COMPONENT
-----------------------------------*/
-const Carousel = ({ images }: { images: number[] }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const nextSlide = () => setCurrentIndex((prev) => (prev + 1) % images.length);
-  const prevSlide = () =>
-    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
-  return (
-    <div className={styles.carouselWrapper}>
-      <button className={styles.navBtn} onClick={prevSlide}>
-        ‹
-      </button>
-      <div className={styles.carousel}>
-        <div
-          className={styles.carouselTrack}
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-        >
-          {images.map((num) => (
-            <div className={styles.slide} key={num}>
-              <img
-                src={`/screenshots/screen-${num}.webp`}
-                alt={`Screenshot ${num}`}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-      <button className={styles.navBtn} onClick={nextSlide}>
-        ›
-      </button>
-    </div>
-  );
-};
+
+import Carousel from '../components/common/Carousel';
 
 const VolunteersForCausePage = () => {
     const screenshots = [10, 11, 12, 13, 14];

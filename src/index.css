@@ -10,5 +10,23 @@ html, body {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
-  background: #000; /* optional */
+  background: #000;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Link styles */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Improve button cursor */
+button {
+  cursor: pointer;

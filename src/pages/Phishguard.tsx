@@ -1,5 +1,5 @@
 // src/pages/PhishGuardPage.tsx
-import { useState } from "react";
+
 import { motion } from "framer-motion";
 
 import {
@@ -19,45 +19,7 @@ import {
 import styles from "./PhishGuard.module.css";
 import Button from "../components/common/Button";
 
-/* --------------------------------
-   CAROUSEL COMPONENT
-----------------------------------*/
-const Carousel = ({ images }: { images: number[] }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const nextSlide = () => setCurrentIndex((prev) => (prev + 1) % images.length);
-
-  const prevSlide = () =>
-    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
-
-  return (
-    <div className={styles.carouselWrapper}>
-      <button className={styles.navBtn} onClick={prevSlide}>
-        ‹
-      </button>
-
-      <div className={styles.carousel}>
-        <div
-          className={styles.carouselTrack}
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-        >
-          {images.map((num) => (
-            <div className={styles.slide} key={num}>
-              <img
-                src={`/screenshots/screen-${num}.webp`}
-                alt={`Screenshot ${num}`}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <button className={styles.navBtn} onClick={nextSlide}>
-        ›
-      </button>
-    </div>
-  );
-};
+import Carousel from '../components/common/Carousel';
 
 /* --------------------------------
    PAGE COMPONENT
@@ -91,6 +53,8 @@ const PhishGuardPage = () => {
             <strong>GitHub:</strong>
             <a
               href="https://github.com/DevJerry1738/phishing-simulator"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaGithub /> github.com/DevJerry1738/phishing-simulator
             </a>

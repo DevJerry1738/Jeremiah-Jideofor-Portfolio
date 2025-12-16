@@ -53,10 +53,9 @@ const FeaturedProjects = () => {
       
       
       <div className={styles.viewAllContainer}>
-        <Link to="https://github.com/DevJerry1738?tab=repositories" className={styles.viewAllButton}>
-        {/* link to github */}
+        <a href="https://github.com/DevJerry1738?tab=repositories" target="_blank" rel="noopener noreferrer" className={styles.viewAllButton}>
           <Button text="View GitHub Repository" variant="secondary" />
-        </Link>
+        </a>
       </div>
     </section>
   );

@@ -1,36 +1,52 @@
 .button {
-  padding: 1rem 2rem;
+  padding: 0.95rem 2rem;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s, color 0.3s;
+  transition: all 0.3s ease;
   font-weight: 600;
+  font-size: 1rem;
   margin-right: 10px;
+  text-transform: none;
 }
 
 /* PRIMARY BUTTON */
 .primary {
-  background: #007bff;
+  background: linear-gradient(135deg, #007bff, #0056b3);
   color: white;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
 }
 
 .primary:hover {
-  background: #0056b3;
+  background: linear-gradient(135deg, #0056b3, #003d82);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.primary:active {
+  transform: translateY(0);
 }
 
 /* SECONDARY BUTTON */
 .secondary {
   background: transparent;
-  color: #768da5;
-  border: 2px solid #768da5;
+  color: #007bff;
+  border: 2px solid #007bff;
+  transition: all 0.3s ease;
 }
 
 .secondary:hover {
-  background: #fff;
-  color: #007bff;
-  border-color: #007bff;
+  background: #007bff;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.secondary:active {
+  transform: translateY(0);
 }
 
 .linkWrapper {
   text-decoration: none;
+  display: inline-block;
 }

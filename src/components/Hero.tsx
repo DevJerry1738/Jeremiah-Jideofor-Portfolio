@@ -11,7 +11,7 @@ import {
   SiTailwindcss,
   SiPostman,
 } from "react-icons/si";
-import { FaWordpress } from "react-icons/fa6";
+import { FaFlutter, FaWordpress } from "react-icons/fa6";
 import { PiFramerLogo } from "react-icons/pi";
 
 const techStack = [
@@ -24,6 +24,7 @@ const techStack = [
   { name: "Figma", icon: <FaFigma size={32} /> },
   { name: "Postman", icon: <SiPostman size={32} /> }, 
   { name: "WordPress", icon: <FaWordpress size={32} /> },
+  { name: "Flutter", icon: <FaFlutter size={32} /> },
   { name: "Framer", icon: <PiFramerLogo size={32} /> },
 ];
 
