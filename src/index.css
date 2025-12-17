@@ -10,7 +10,8 @@ html, body {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
-  background: #000;
+  background: #f9fafb; /* light neutral background for production */
+  color: #0f172a; /* default text color */
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -30,3 +31,4 @@ a {
 /* Improve button cursor */
 button {
   cursor: pointer;
+}
