@@ -40,7 +40,7 @@ const servicesData = [
 const Services = () => {
   return (
     <section className={styles.services}>
-      <div className={styles.sectionDivider}></div>
+      <div className={styles.SectionDivider}></div>
       <motion.h2
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

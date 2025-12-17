@@ -33,13 +33,15 @@ const About = () => {
           secure, clearly architected, and built to last.
         </p>
 
-        <Link to="/projects">
-          <Button text="View My Projects" />
-        </Link>
+        <div className={styles.buttonGroup}>
+          <Link to="/projects">
+            <Button text="View My Projects" />
+          </Link>
 
-        <Link to="/contact">
-          <Button text="Contact Me" variant="secondary" />
-        </Link>
+          <Link to="/contact">
+            <Button text="Contact Me" variant="secondary" />
+          </Link>
+        </div>
 
         <ul className={styles.list}>
           <li>
@@ -58,7 +60,7 @@ const About = () => {
           </li>
         </ul>
       </motion.div>
-      
+
       <footer className={styles.footer}>© 2025. All Rights Reserved.</footer>
     </section>
   );

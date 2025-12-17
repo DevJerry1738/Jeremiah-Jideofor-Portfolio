@@ -75,16 +75,16 @@ export const articles: Article[] = [
 
       <h2>How AI Is Making Agile Teams More Effective</h2>
 
-      <h3>1. More clarity during sprint planning</h3>
+      <strong>1. More clarity during sprint planning</strong>
       <p>AI tools analyse prior sprints, user patterns, and performance data to highlight what truly deserves attention. This gives product owners a clearer view of value and reduces last-minute surprises.</p>
 
-      <h3>2. Improved developer productivity</h3>
+      <strong>2. Improved developer productivity</strong>
       <p>AI assistants reduce repetitive work, suggesting fixes, flagging risky code, and generating initial function drafts, so developers can focus on creative problem solving.</p>
 
-      <h3>3. Faster and smarter testing</h3>
+      <strong>3. Faster and smarter testing</strong>
       <p>AI testing tools predict high-risk areas, generate test cases quickly, and surface vulnerabilities early, improving quality and speeding up delivery.</p>
 
-      <h3>4. Better visibility for project managers</h3>
+      <strong>4. Better visibility for project managers</strong>
       <p>AI analytics provide real-time insights on team velocity, workload balance, and blockers, enabling faster, more informed decisions.</p>
 
       <h2>Practical ways to bring AI into existing workflows</h2>

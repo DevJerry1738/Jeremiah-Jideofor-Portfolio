@@ -5,12 +5,12 @@
   background: #F8F9FA;
 }
 
-.sectionDivider {
-  width: 80px;
-  height: 3px;
-  background: #007bff;
-  margin: 0 auto 2rem;
-  border-radius: 6px;
+.SectionDivider {
+  width: 84px;
+  height: 6px;
+  background: linear-gradient(to right, #0d6efd, #00c6ff);
+  margin: 0 auto 1rem;
+  border-radius: 8px;
 }
 
 .services h2 {
