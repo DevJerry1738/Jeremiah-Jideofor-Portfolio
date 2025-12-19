@@ -11,7 +11,6 @@ import {
   MdDevices,
 } from "react-icons/md";
 import {
-  FaGithub,
   FaLightbulb,
   FaStore,
 } from "react-icons/fa";
@@ -47,16 +46,7 @@ const LeoCosmeticsPage = () => {
           <div className={styles.metaItem}>
             <strong>Duration:</strong> 1 Months
           </div>
-          <div className={styles.metaItem}>
-            <strong>GitHub:</strong>{" "}
-            <a
-              href="https://github.com/DevJerry1738/leo-cosmetics"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub /> github.com/DevJerry1738/leo-cosmetics
-            </a>
-          </div>
+          
           <div className={styles.metaItem}>
             <strong>Live Demo:</strong>{" "}
             <a
@@ -65,6 +55,15 @@ const LeoCosmeticsPage = () => {
               rel="noopener noreferrer"
             >
               leo-cosmetics.vercel.app
+            </a>
+          </div>
+          <div className={styles.metaItem}>
+            <a
+              href="https://github.com/DevJerry1738/leo-cosmetics"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View GitHub Repository
             </a>
           </div>
         </div>

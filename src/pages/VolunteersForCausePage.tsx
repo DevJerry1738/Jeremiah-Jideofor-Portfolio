@@ -11,7 +11,6 @@ import {
 import {
   FaReact,
   FaCss3Alt,
-  FaGithub,
   FaLightbulb,
 } from "react-icons/fa";
 
@@ -46,24 +45,25 @@ const VolunteersForCausePage = () => {
           <div className={styles.metaItem}>
             <strong>Type:</strong> Real-World NGO Website
           </div>
+          
           <div className={styles.metaItem}>
-            <strong>GitHub:</strong>
-            <a
-              href="https://github.com/DevJerry1738/v4c-abuja"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub /> github.com/DevJerry1738/v4c-abuja
-            </a>
-          </div>
-          <div className={styles.metaItem}>
-            <strong>Live:</strong>
+            <strong>Live Demo:</strong>
             <a
               href="https://v4c-abuja.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
             >
               v4c-abuja.vercel.app
+            </a>
+          </div>
+          <div className={styles.metaItem}>
+            
+            <a
+              href="https://github.com/DevJerry1738/v4c-abuja"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View GitHub Repository
             </a>
           </div>
         </div>

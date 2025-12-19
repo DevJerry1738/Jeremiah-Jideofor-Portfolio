@@ -6,9 +6,16 @@ import styles from './FeaturedProjects.module.css';
 import phishguardImg from '../assets/phishguard.webp';
 import leoCosmeticsImg from '../assets/leo-cosmetics.webp';
 import v4c from '../assets/v4c.webp';
+import capitalConnectImg from '../assets/capital-connect.webp';
 import Button from '../components/common/Button';
 
 const featuredProjectsData = [
+  {
+    title: 'Capital Connect',
+    type: 'Local Services Discovery',
+    image: capitalConnectImg,
+    detailPath: '/projects/capital-connect',
+  },
   {
     title: 'PhishGuard NG',
     type: 'Cybersecurity Tool',
@@ -26,8 +33,7 @@ const featuredProjectsData = [
     type: 'NGO Website',
     image: v4c,
     detailPath: '/projects/volunteers4cause-ngo-website',
-  },
-  
+  }
 ];
 
 const FeaturedProjects = () => {

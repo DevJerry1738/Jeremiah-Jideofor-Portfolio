@@ -12,7 +12,6 @@ import {
 } from "react-icons/md";
 
 import {
-  FaGithub,
   FaUsers,
   FaLightbulb,
 } from "react-icons/fa";
@@ -50,13 +49,13 @@ const PhishGuardPage = () => {
             <strong>Duration:</strong> 2 Months (2025)
           </div>
           <div className={styles.metaItem}>
-            <strong>GitHub:</strong>
+           
             <a
               href="https://github.com/DevJerry1738/phishing-simulator"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub /> github.com/DevJerry1738/phishing-simulator
+              View GitHub Repository
             </a>
           </div>
         </div>

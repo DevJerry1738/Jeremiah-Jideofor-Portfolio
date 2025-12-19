@@ -13,6 +13,7 @@ import Navbar from './components/Navbar';
 import PhishGuard from './pages/Phishguard';
 import LeoCosmeticsPage from './pages/LeoCosmeticsPage';
 import VolunteersForCausePage from './pages/VolunteersForCausePage';
+import CapitalConnectPage from './pages/CapitalConnect';
 
 // Scroll to top component
 function ScrollToTop() {
@@ -39,6 +40,7 @@ function App() {
         <Route path="/projects/phishing-simulation-tool" element={<PhishGuard />} />
         <Route path="/projects/leo-cosmetics" element={<LeoCosmeticsPage />} />
         <Route path="/projects/volunteers4cause-ngo-website" element={<VolunteersForCausePage />} />
+        <Route path="/projects/capital-connect" element={<CapitalConnectPage />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogArticle />} />
       </Routes>
