@@ -86,11 +86,13 @@ h4 {
    BUTTONS
 =========================== */
 
-.hero-buttons {
+.heroButtons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+  height: auto;
+  margin-top: 3rem;
 }
 
 /* ===========================
@@ -158,4 +160,21 @@ h4 {
   .scrollerInner {
     gap: 1.5rem;
   }
+  
 }
+
+@media (max-width: 400px) {
+  .heroButtons {
+    flex-direction: row;
+    gap: 0.75rem;
+    height: 150px;
+  }
+
+  .heroButtons a,
+  .heroButtons button {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+

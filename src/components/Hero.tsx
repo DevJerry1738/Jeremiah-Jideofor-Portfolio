@@ -45,7 +45,7 @@ const Hero = () => {
             technology.
           </h4>
 
-          <div className="hero-buttons">
+          <div className={styles.heroButtons}>
             <Button
               text="Work With Me"
               to="/contact"
