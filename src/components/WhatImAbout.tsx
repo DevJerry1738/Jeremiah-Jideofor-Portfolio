@@ -24,7 +24,6 @@ const cards = [
 const WhatImAbout = () => {
   return (
     <section className={styles.section}>
-      
       <div className={styles.cardGrid}>
         {cards.map((card, index) => (
           <motion.div

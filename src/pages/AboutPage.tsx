@@ -5,7 +5,7 @@ import Button from "../components/common/Button";
 import styles from "./AboutPage.module.css";
 import { RiShieldCheckLine, RiRocketLine, RiCodeLine } from "react-icons/ri";
 
-const About = () => {
+const AboutPage = () => {
   return (
     <section className={styles.about}>
       <motion.div
@@ -66,4 +66,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutPage;

@@ -1,8 +1,9 @@
 // src/components/Services.tsx
 import { motion } from 'framer-motion';
-import { MdWeb, MdSecurity, MdDesignServices, MdBusinessCenter, MdArticle } from 'react-icons/md';
+import { MdWeb, MdSecurity, MdDesignServices, MdBusinessCenter, MdArticle, MdPhoneAndroid } from 'react-icons/md';
 import { FaPenFancy } from 'react-icons/fa';
 import styles from './Services.module.css';
+import { title } from 'framer-motion/client';
 
 const servicesData = [
   {
@@ -12,8 +13,13 @@ const servicesData = [
   },
   {
     icon: <MdSecurity />,
-    title: 'Website Security Consulting',
+    title: 'Cyber Security Consulting',
     description: 'Audits and implementations to protect your online assets, ensuring compliance and robust defense against threats.',
+  },
+  {
+    icon: <MdPhoneAndroid />,
+    title: 'Mobile App Development',
+    description: 'Cross-platform mobile applications designed for performance and user engagement on both iOS and Android.',
   },
   {
     icon: <MdDesignServices />,
@@ -28,13 +34,14 @@ const servicesData = [
   {
     icon: <FaPenFancy />,
     title: 'Article Writing',
-    description: 'High-quality, researched articles tailored to your brand and audience—SEO friendly and ready to publish.',
+    description: 'High-quality, researched articles tailored to your brand and audience. SEO friendly and ready to publish.',
   },
   {
     icon: <MdArticle />,
     title: 'Technical Writing',
     description: 'Clear, accurate technical documentation, guides, and developer-facing content for software products.',
   },
+  
 ];
 
 const Services = () => {

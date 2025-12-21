@@ -1,78 +1,143 @@
 /* src/components/Services.module.css */
+
 .services {
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
+  background:
+    radial-gradient(circle at top, rgba(13,110,253,0.15), transparent 60%),
+    linear-gradient(180deg, #0b1220, #060b14);
   text-align: center;
-  background: #F8F9FA;
 }
 
 .SectionDivider {
-  width: 84px;
+  width: 90px;
   height: 6px;
-  background: linear-gradient(to right, #0d6efd, #00c6ff);
+  background: linear-gradient(90deg, #0d6efd, #00c6ff);
   margin: 0 auto 1rem;
-  border-radius: 8px;
+  border-radius: 999px;
 }
 
 .services h2 {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   margin-bottom: 0.8rem;
-  color: #212529;
+  color: #eaf2ff;
   text-align: center;
-  color: #007bff;
 }
 
 .intro {
-  font-size: 1.2rem;
-  margin-bottom: 3rem;
-  color: #343A40;
-  max-width: 800px;
+  font-size: 1.15rem;
+  margin-bottom: 3.5rem;
+  color: #b9c6e4;
+  max-width: 780px;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* --- GRID --- */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
-}
 
-.card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  text-align: center;
-  transition: transform 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  max-width: 1200px;
+  margin: 0 auto;
 
-.icon {
-  font-size: 3rem;
-  color: #007BFF;
-  margin-bottom: 1rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #007BFF;
-  min-height: 3em; /* Ensures uniform starting point for divider/description */
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 
-.divider {
-  width: 100%;
-  height: 1px;
-  background: #eee;
-  margin: 0.5rem 0 1rem;
+
+/* --- CARD --- */
+.card {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.04),
+    rgba(255,255,255,0.01)
+  );
+  border-radius: 18px;
+  padding: 2.4rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.35),
+    inset 0 0 0 rgba(13,110,253,0);
+
+  backdrop-filter: blur(8px);
+  transition:
+    background 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease,
+    transform 0.35s ease;
 }
 
-p {
+/* --- HOVER EFFECT --- */
+.card:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(13,110,253,0.18),
+    rgba(0,198,255,0.12)
+  );
+  border-color: rgba(13,110,253,0.5);
+  box-shadow:
+    0 30px 60px rgba(13,110,253,0.25),
+    inset 0 0 0 1px rgba(13,110,253,0.35);
+}
+
+/* --- ICON --- */
+.icon {
+  font-size: 3.2rem;
+  color: #4dabff;
+  margin-bottom: 1.2rem;
+  transition: transform 0.35s ease, color 0.35s ease;
+}
+
+.card:hover .icon {
+  transform: scale(1.15) rotate(-3deg);
+  color: #ffffff;
+}
+
+/* --- TITLE --- */
+.card h3 {
+  font-size: 1.45rem;
+  margin-bottom: 0.6rem;
+  color: #eaf2ff;
+  min-height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.35s ease;
+}
+
+.card:hover h3 {
+  color: #ffffff;
+}
+
+/* --- DIVIDER --- */
+.divider {
+  width: 60%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #0d6efd, transparent);
+  margin: 0.8rem 0 1.2rem;
+  opacity: 0.6;
+  transition: opacity 0.35s ease, width 0.35s ease;
+}
+
+.card:hover .divider {
+  width: 80%;
+  opacity: 1;
+}
+
+/* --- DESCRIPTION --- */
+.card p {
   font-size: 1rem;
-  color: #343A40;
+  color: #c5d2ee;
+  line-height: 1.6;
   flex-grow: 1;
+  transition: color 0.35s ease;
+}
+
+.card:hover p {
+  color: #eef4ff;
 }
