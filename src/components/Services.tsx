@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { MdWeb, MdSecurity, MdDesignServices, MdBusinessCenter, MdArticle, MdPhoneAndroid } from 'react-icons/md';
 import { FaPenFancy } from 'react-icons/fa';
 import styles from './Services.module.css';
-import { title } from 'framer-motion/client';
 
 const servicesData = [
   {

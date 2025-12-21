@@ -4,7 +4,6 @@ import Hero from '../components/Hero';
 import About from '../components/About';
 import Services from '../components/Services';
 import Contact from '../components/Contact';
-import WhatImAbout from '../components/WhatImAbout';
 import FeaturedProjects from '../components/FeaturedProjects';
 
 const Home = () => {
